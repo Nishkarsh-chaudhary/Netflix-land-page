@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Building the application...
+      
+  post_build:
+    commands:
+      - echo Running post-build scripts...
+      - echo Build completed on `date`
+
+artifacts:
+  files:
+    - '**/*'
